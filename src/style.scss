@@ -96,7 +96,7 @@ body {
   }
 
   50% {
-    transform: translateX(20%) translateY(10%);
+    transform: translateX(100%) translateY(10%);
   }
 
   100% {
@@ -243,7 +243,7 @@ body {
     z-index: 2;
     -webkit-mask-image: radial-gradient(ellipse at 49% 0%, black 50%, rgba(0, 0, 0, 0.14) 50%, rgba(0, 0, 0, 0) 100%);
     mask-image: radial-gradient(ellipse at 49% 0%, black 50%, rgba(0, 0, 0, 0.14) 50%, rgba(0, 0, 0, 0) 100%);
-    animation: moveHorizontal 18s ease-in-out infinite, scale 4s ease-in-out;
+    animation: moveHorizontal 18s ease-in-out infinite, scale 4s ease-in-out infinite;
 
   }
 
@@ -259,6 +259,8 @@ body {
     opacity: 0.6;
     z-index: 3;
     transform: skew(-10deg, -10deg);
+    animation: moveHorizontal 18s ease-in-out infinite;
+
   }
 
   .g4 {
@@ -287,19 +289,20 @@ body {
     animation: moveInCircle 30s ease-in-out infinite;
 
     &.alt {
-      left:60%; 
-      top:26%;
+      left: 60%;
+      top: 26%;
       animation-duration: 40s;
       width: 5%;
       height: 3%;
       transform-origin: 60px;
-      animation: moveInCircle 20s ease-in-out infinite, scale 2s ease-in-out;
+      animation: moveInCircle 20s ease-in-out infinite, scale 2s ease-in-out infinite;
 
       background: radial-gradient(ellipse, rgba(var(--color1), 1) 0, rgba(var(--color2), 0.5) 100%) no-repeat;
     }
+
     &.alt2 {
-      left:50%; 
-      top:22%;
+      left: 50%;
+      top: 22%;
       animation-duration: 40s;
       width: 6%;
       height: 4%;
@@ -332,8 +335,6 @@ body {
     left: 50%;
     z-index: 1;
     animation: moveSkewScale 20s ease-in-out infinite;
-    -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.14) 80%, rgba(0, 0, 0, 0.15) 100%);
-    mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.14) 80%, rgba(0, 0, 0, 0.15) 100%);
   }
 
   .g8 {
@@ -347,6 +348,14 @@ body {
     rotate: 327deg;
     animation: gradient-anim 5s ease-in-out infinite;
 
+    &.alt {
+      bottom: 46%;
+      width: 20%;
+      animation: gradient-anim 5s ease-in-out infinite, scale 10s ease-in-out infinite;
+
+      height: 5%;
+      left: 20%;
+    }
   }
 
   .interactive {
