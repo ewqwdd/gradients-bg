@@ -1,4 +1,6 @@
 import './style.scss'
+import './style2.scss'
+
 
 
 

@@ -10,27 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="hide">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
     <div class="gradient-bg white">
-      <svg xmlns="http://www.w3.org/2000/svg" class="hide">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-              result="goo"
-            />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
-      </svg>
       <div class="gradients-container">
         <div class="g9"></div>
         <div class="g4"></div>
         <!-- <div class="g2"></div> -->
         <div class="g1"></div>
-        <svg class="gradient1" width="1080" height="688" viewBox="0 0 1080 688" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          class="gradient1"
+          width="1080"
+          height="688"
+          viewBox="0 0 1080 688"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g>
             <path
               d="M76.8125 519.513L63.2085 511.013C48.6894 501.942 31.3379 498.534 14.4664 501.442L2.07274 503.578C-21.8466 507.701 -45.5352 495.163 -55.5777 473.066L-84.769 408.835C-90.0961 397.114 -80.133 384.211 -67.4452 386.4L369.922 459.617C414.061 467.007 457.735 444.169 476.851 403.704L493.166 369.169C501.259 352.037 514.053 337.557 530.057 327.415L793.589 160.413C800.229 156.205 807.522 153.13 815.17 151.311L918.276 126.798C934.622 122.912 948.207 139.657 941.034 154.851C939.415 158.281 938.803 162.1 939.268 165.864L949.056 245.102C949.056 259.839 937.297 271.885 922.563 272.241L793.028 275.367C773.164 275.846 753.894 282.232 737.675 293.709L574.951 408.862C556.382 422.002 542.849 441.081 536.584 462.95L515.4 536.896C514.648 539.518 515.376 542.343 517.301 544.276C523.051 550.052 516.796 559.572 509.212 556.585L317.472 481.072C305.324 476.288 291.797 476.381 279.717 481.333L167.727 527.235C137.946 539.442 104.109 536.568 76.8125 519.513Z"
@@ -53,23 +60,51 @@
             </filter>
           </defs>
         </svg>
-        <svg width="537" class="gradient2" height="488" viewBox="0 0 537 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="537"
+          class="gradient2"
+          height="488"
+          viewBox="0 0 537 488"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_f_1226_6651)">
-          <path d="M-44.0725 322.766L-58.0519 314.038C-72.6667 304.914 -90.129 301.49 -107.108 304.418C-138.538 309.838 -169.668 293.366 -182.866 264.331L-191.203 245.991C-206.827 211.619 -191.357 171.106 -156.799 155.895C-140.878 148.888 -122.872 148.269 -106.507 154.167L-24.8483 183.598C2.39472 193.417 32.5564 190.943 57.8361 176.818L68.6621 170.769C96.8891 154.997 131 153.846 160.226 167.681L373.985 268.867C378.237 270.88 381.301 274.767 382.267 279.371L386.261 298.421C388.582 309.489 374.299 316.034 367.431 307.051C365.749 304.852 363.274 303.396 360.534 302.994L205.919 280.334C188.186 277.736 170.08 279.95 153.496 286.747L46.8068 330.471C17.038 342.671 -16.7824 339.803 -44.0725 322.766Z" fill="url(#paint0_linear_1226_6651)"/>
-          <path d="M-44.0725 322.766L-58.0519 314.038C-72.6667 304.914 -90.129 301.49 -107.108 304.418C-138.538 309.838 -169.668 293.366 -182.866 264.331L-191.203 245.991C-206.827 211.619 -191.357 171.106 -156.799 155.895C-140.878 148.888 -122.872 148.269 -106.507 154.167L-24.8483 183.598C2.39472 193.417 32.5564 190.943 57.8361 176.818L68.6621 170.769C96.8891 154.997 131 153.846 160.226 167.681L373.985 268.867C378.237 270.88 381.301 274.767 382.267 279.371L386.261 298.421C388.582 309.489 374.299 316.034 367.431 307.051C365.749 304.852 363.274 303.396 360.534 302.994L205.919 280.334C188.186 277.736 170.08 279.95 153.496 286.747L46.8068 330.471C17.038 342.671 -16.7824 339.803 -44.0725 322.766Z" fill="#1BADFF"/>
+            <path
+              d="M-44.0725 322.766L-58.0519 314.038C-72.6667 304.914 -90.129 301.49 -107.108 304.418C-138.538 309.838 -169.668 293.366 -182.866 264.331L-191.203 245.991C-206.827 211.619 -191.357 171.106 -156.799 155.895C-140.878 148.888 -122.872 148.269 -106.507 154.167L-24.8483 183.598C2.39472 193.417 32.5564 190.943 57.8361 176.818L68.6621 170.769C96.8891 154.997 131 153.846 160.226 167.681L373.985 268.867C378.237 270.88 381.301 274.767 382.267 279.371L386.261 298.421C388.582 309.489 374.299 316.034 367.431 307.051C365.749 304.852 363.274 303.396 360.534 302.994L205.919 280.334C188.186 277.736 170.08 279.95 153.496 286.747L46.8068 330.471C17.038 342.671 -16.7824 339.803 -44.0725 322.766Z"
+              fill="url(#paint0_linear_1226_6651)"
+            />
+            <path
+              d="M-44.0725 322.766L-58.0519 314.038C-72.6667 304.914 -90.129 301.49 -107.108 304.418C-138.538 309.838 -169.668 293.366 -182.866 264.331L-191.203 245.991C-206.827 211.619 -191.357 171.106 -156.799 155.895C-140.878 148.888 -122.872 148.269 -106.507 154.167L-24.8483 183.598C2.39472 193.417 32.5564 190.943 57.8361 176.818L68.6621 170.769C96.8891 154.997 131 153.846 160.226 167.681L373.985 268.867C378.237 270.88 381.301 274.767 382.267 279.371L386.261 298.421C388.582 309.489 374.299 316.034 367.431 307.051C365.749 304.852 363.274 303.396 360.534 302.994L205.919 280.334C188.186 277.736 170.08 279.95 153.496 286.747L46.8068 330.471C17.038 342.671 -16.7824 339.803 -44.0725 322.766Z"
+              fill="#1BADFF"
+            />
           </g>
           <defs>
-          <filter id="filter0_f_1226_6651" x="-347.297" y="0.151367" width="883.81" height="487.789" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_1226_6651"/>
-          </filter>
-          <linearGradient id="paint0_linear_1226_6651" x1="47.5404" y1="320.627" x2="391.939" y2="273.417" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#001AF5"/>
-          <stop offset="1" stop-color="#001AF5" stop-opacity="0"/>
-          </linearGradient>
+            <filter
+              id="filter0_f_1226_6651"
+              x="-347.297"
+              y="0.151367"
+              width="883.81"
+              height="487.789"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_1226_6651" />
+            </filter>
+            <linearGradient
+              id="paint0_linear_1226_6651"
+              x1="47.5404"
+              y1="320.627"
+              x2="391.939"
+              y2="273.417"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#001AF5" />
+              <stop offset="1" stop-color="#001AF5" stop-opacity="0" />
+            </linearGradient>
           </defs>
-          </svg>
+        </svg>
 
         <div class="g3"></div>
         <div class="g7"></div>
@@ -85,6 +120,39 @@
         <!-- <div class="g3"></div> -->
         <!-- <div class="g5"></div> -->
         <!-- <div class="interactive"></div> -->
+      </div>
+    </div>
+    <div class="gradient-bg">
+      <div class="gradients-container">
+        <svg class="gradient3" width="661" height="169" viewBox="0 0 661 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.8" filter="url(#filter0_f_1226_6609)">
+            <path
+              d="M636.849 75.1571L572.517 91.6984L349.929 45.1083L176.687 131.844L153.752 142.262C142.287 147.469 128.746 142.93 122.736 131.864L107.269 103.385L24.3927 81.1779L121.682 92.9058L143.305 85.808C148.754 84.0195 154.662 84.241 159.962 86.4324L174.951 92.6311C180.101 94.7607 185.832 95.0318 191.16 93.3979L415.131 24.711L636.849 75.1571Z"
+              fill="#4EEAFF"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_1226_6609"
+              x="0.392639"
+              y="0.710938"
+              width="660.456"
+              height="167.703"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gblue1"></div>
+        <div class="gblue1 move1"></div>
+        <div class="gblue1 move2"></div>
+        <div class="gblue1 move3"></div>
+        <div class="gblue1 move4"></div>
+        <div class="gblue1 move5"></div>
+
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
