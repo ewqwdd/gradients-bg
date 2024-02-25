@@ -19,50 +19,18 @@
         animation: opacityHZ 15s ease-in-out infinite, moveHZ 15s ease-in-out infinite;
     }
 
-    &.move2 {
-        mask-image: radial-gradient(ellipse at 0% 0%, rgba(255, 255, 0, 0) 0%, rgb(0, 0, 0) 49%, rgb(0, 0, 0) 100%);
-        opacity: 0.72;
-        filter: blur(14px);
-        left: 140px;
-        height: 229px;
-        width: 303px;
-        top: -56px;
-        background: radial-gradient(rgba(var(--color4), 0.75) 0, rgba(var(--color-bg), 0) 90%) no-repeat;
-        rotate: 346deg;
-    }
-
-    &.move3 {
-        opacity: 0.42;
-        filter: blur(14px);
-        left: 10px;
-        height: 171px;
-        width: 245px;
-        top: 63px;
-        background: radial-gradient(rgba(var(--color4), 0.75) 0, rgba(var(--color-bg), 0) 90%) no-repeat;
-        rotate: 346deg;
-    }
-
     &.move4 {
-        opacity: 0.52;
-        filter: blur(14px);
+        opacity: 0.40;
+        filter: blur(8px);
         left: 345px;
-        height: 148px;
-        width: 278px;
-        top: -28px;
+        height: 166px;
+        width: 211px;
+        top: -38px;
         background: radial-gradient(rgba(var(--color4), 0.9) 0, rgba(var(--color-bg), 0) 90%) no-repeat;
         rotate: 8deg;
+        mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 31%);
     }
 
-    // &.move5 {
-    //     opacity: 0.52;
-    //     filter: blur(14px);
-    //     left: 345px;
-    //     height: 148px;
-    //     width: 278px;
-    //     top: -51px;
-    //     background: radial-gradient(rgba(var(--color4), 0.9) 0, rgba(var(--color-bg), 0) 90%) no-repeat;
-    //     rotate: 8deg;
-    // }
 }
 
 @keyframes moveHZ {
@@ -151,4 +119,13 @@
     z-index: 10;
     rotate: 18deg;
     transform: skew(333deg, 354deg);
+}
+
+.gradient4 {
+    left: -55px;
+    top: -518px;
+    position: absolute;
+    rotate: 2deg;
+    opacity: 0.35;
+    filter: blur(17px);
 }
